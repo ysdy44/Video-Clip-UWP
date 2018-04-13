@@ -1,0 +1,10 @@
+App.xbf
+Control\MainCanvasControl.xbf
+Control\PlayControl.xbf
+Control\ThemeButton.xbf
+Control\TranscoderControl2.xbf
+DrawPage.xbf
+MainPage.xbf
+Picker\NumberPicker.xbf
+Picker\TipPicker.xbf
+Style\Style.xbf

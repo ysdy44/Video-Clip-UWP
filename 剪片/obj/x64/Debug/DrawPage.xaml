@@ -1,0 +1,417 @@
+﻿<Page x:ConnectionId='1'
+    x:Class="剪片.DrawPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:剪片"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:developerTools="using:Microsoft.Toolkit.Uwp.DeveloperTools"
+     xmlns:con="using:剪片.Control"
+    xmlns:Pic="using:剪片.Picker"
+    mc:Ignorable="d" 
+                        
+                                  
+>
+
+        <SplitView x:ConnectionId='2' x:Name="LeftSplitView" PanePlacement="Left" OpenPaneLength="300" CompactPaneLength="0" 
+                   DisplayMode="Overlay" IsPaneOpen="False"  LightDismissOverlayMode="On" >
+
+            <SplitView.Content>
+                <Grid x:ConnectionId='3' x:Name="RootGrid" Background="{ThemeResource SystemControlForegroundChromeMediumBrush}">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="40"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+
+
+                    <!--顶栏-->
+                    <Grid  >
+
+
+                        <Button x:ConnectionId='15' x:Name="MenuButton" Width="60" FontFamily="Segoe UI Symbol" Content="&#xE154;" VerticalAlignment="Bottom"   Style="{StaticResource NavigationBackButtonNormalStyle}"                            />
+
+
+
+                        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                            <Button x:ConnectionId='26'  x:Name="TrimButton" Width="50" IsEnabled="{Binding isCurrentNull,Mode=OneWay}"  Style="{ThemeResource NavigationBackButtonNormalStyle}"                           >
+                                <FontIcon Glyph="&#xE16B;" FontSize="18" FontFamily="Segoe UI Symbol"/>
+                            </Button>
+                        <Button x:ConnectionId='27'   x:Name="CopyButton" Width="50" IsEnabled="{Binding isCurrentNull,Mode=OneWay}"  Style="{ThemeResource NavigationBackButtonNormalStyle}"                           >
+                                <FontIcon Glyph="&#xE16D;" FontSize="17" FontFamily="Segoe UI Symbol"/>
+                            </Button>
+                        <Button x:ConnectionId='28'   x:Name="RemoveButton" Width="50" IsEnabled="{Binding isCurrentNull,Mode=OneWay}" Style="{ThemeResource NavigationBackButtonNormalStyle}"                             >
+                                <FontIcon Glyph="&#xE107;" FontFamily="Segoe UI Symbol"/>
+                            </Button>
+
+                            <AppBarSeparator/>
+
+                            <Button x:ConnectionId='29' x:Name="PropertyButton"   Width="50" Style="{ThemeResource NavigationBackButtonNormalStyle}" >
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE783;"/>
+                                <Button.Flyout>
+                                <Flyout x:ConnectionId='33'  x:Name="PropertyFlyout" FlyoutPresenterStyle="{StaticResource FlyoutPresenterBottom}"                                                                            >
+                                        <Grid Padding="4">
+
+                                            <Grid x:ConnectionId='34' x:Name="PropertyNullGrid"   Height="222"   Width="200">
+                                                <TextBlock  Text="Null Page"    HorizontalAlignment="Center"   VerticalAlignment="Center"  Style="{ThemeResource BaseTextBlockStyle}"/>
+                                            </Grid>
+
+                                            <Grid x:ConnectionId='35' x:Name="PropertyMediaGrid">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Text="Volume" Style="{ThemeResource BaseTextBlockStyle}"/>
+                                                <Slider x:ConnectionId='48'  x:Name="PropertyMediaVolumeSlider"     Minimum="0" Maximum="1"     Margin="4,0" Width="222" Height="40"   LargeChange="0.01"   StepFrequency="0.01" IsThumbToolTipEnabled="True"  Style="{StaticResource Slider}"                                                         />
+                                            </StackPanel>
+                                            </Grid>
+
+                                            <Grid x:ConnectionId='36' x:Name="PropertyOverlayGrid">
+                                                <StackPanel>
+
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="X" Style="{StaticResource TitleTextBlock}"/>
+                                                        <Pic:NumberPicker x:ConnectionId='46'  x:Name="PropertyOverlayXNumberPicker" Width="70" Max="10000"                                                 />
+                                                        <TextBlock    Text="Y" Style="{StaticResource TitleTextBlock}"/>
+                                                        <Pic:NumberPicker x:ConnectionId='47'  x:Name="PropertyOverlayYNumberPicker" Width="70" Max="10000"                                                />
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock  Text="Width" Style="{StaticResource TitleTextBlock}"/>
+                                                        <Pic:NumberPicker x:ConnectionId='44'   x:Name="PropertyOverlayWNumberPicker" Width="70" Max="10000"                                                 />
+                                                        <TextBlock   Text="Height" Style="{StaticResource TitleTextBlock}"/>
+                                                        <Pic:NumberPicker x:ConnectionId='45'   x:Name="PropertyOverlayHNumberPicker"  Width="70" Max="10000"                                                 />
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock  Text="AudioEnabled" Style="{StaticResource TitleTextBlock}"/>
+                                                    <CheckBox x:ConnectionId='43'  x:Name="OverlayAudioSlider"                                                                                      />
+                                                </StackPanel>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock  Grid.Column="1" Grid.Row="0" Text="Volume" Style="{StaticResource TitleTextBlock}"/>
+                                                        <Slider x:ConnectionId='42' x:Name="OverlayVolumeSlider"     Minimum="0" Maximum="1"     Margin="4,0" Width="222" Height="40"   LargeChange="0.01"   StepFrequency="0.01" IsThumbToolTipEnabled="True"  Style="{StaticResource Slider}"                                                  />
+                                                    </StackPanel>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="Opacity" Style="{StaticResource BaseTextBlockStyle}"/>
+                                                        <Slider x:ConnectionId='41'  x:Name="OverlayOpacitySlider"     Minimum="0" Maximum="1"     Margin="4,0" Width="222" Height="40"   LargeChange="0.01"   StepFrequency="0.01" IsThumbToolTipEnabled="True"  Style="{StaticResource Slider}"                                                  />
+                                                    </StackPanel>
+                                              
+                                                    <TextBlock Text="OverlayLayer" Style="{StaticResource BaseTextBlockStyle}"/>
+                                                <Grid>
+                                                    <Grid.ColumnDefinitions>
+                                                        <ColumnDefinition Width="1*"/>
+                                                        <ColumnDefinition Width="2"/>
+                                                        <ColumnDefinition Width="1*"/>
+                                                    </Grid.ColumnDefinitions>
+                                                    <Button x:ConnectionId='39' x:Name="OverlayUpButton" HorizontalAlignment="Stretch"                                >
+                                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE96D;"/>
+                                                    </Button>
+                                                    <Button x:ConnectionId='40' x:Name="OverlayDownButton" Grid.Column="2" HorizontalAlignment="Stretch"                                  >
+                                                        <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE96E;"/>
+                                                    </Button>
+                                                </Grid>
+                                                </StackPanel>
+                                            </Grid>
+
+                                            <Grid x:ConnectionId='37' x:Name="PropertyAudioGrid">
+                                                <StackPanel Orientation="Horizontal">
+                                                    <TextBlock Text="Volume" Style="{ThemeResource BaseTextBlockStyle}"/>
+                                                    <Slider x:ConnectionId='38'  x:Name="PropertyAudioVolumeSlider"     Minimum="0" Maximum="1"     Margin="4,0" Width="222" Height="40"   LargeChange="0.01"   StepFrequency="0.01" IsThumbToolTipEnabled="True"  Style="{StaticResource Slider}"                                                       />
+                                                </StackPanel>
+                                            </Grid>
+
+                                        </Grid>
+                                    </Flyout>
+                                </Button.Flyout>
+                            </Button>
+
+                        <Button x:ConnectionId='30'   x:Name="EffectButton" Width="50"  Style="{ThemeResource NavigationBackButtonNormalStyle}"                             >
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE1CF;"/>
+                        </Button>
+                            
+                        <Button x:ConnectionId='31'   x:Name="AudioButton" Width="50"  Style="{ThemeResource NavigationBackButtonNormalStyle}"                            >
+                            <FontIcon Glyph="&#xE142;" FontSize="18" FontFamily="Segoe UI Symbol"/>
+                        </Button>
+
+                        <Button x:ConnectionId='32'   x:Name="LayerButton" Width="50" Style="{ThemeResource NavigationBackButtonNormalStyle}"                            >
+                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xF156;"/>
+                            </Button>
+
+                        </StackPanel>
+
+
+
+                        <Button x:ConnectionId='16'  x:Name="AddButton"  Width="60" HorizontalAlignment="Right"  Style="{ThemeResource NavigationBackButtonNormalStyle}">
+                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE109;"/>
+                            <Button.Flyout >
+                                <MenuFlyout >
+                                    <MenuFlyoutItem x:ConnectionId='17' x:Name="AddVideoButton" Text="Add form Video"                               >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE786;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutItem x:ConnectionId='18'  x:Name="AddMusicButton" Text="Add form Music"                               >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE189;"/>
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutItem x:ConnectionId='19'  x:Name="AddPicturesButton" Text="Add form Pictures"                                  >
+                                        <MenuFlyoutItem.Icon>
+                                            <FontIcon Glyph="&#xEB9F;" FontSize="24" FontFamily="Segoe MDL2 Assets"  />
+                                        </MenuFlyoutItem.Icon>
+                                    </MenuFlyoutItem>
+                                    <MenuFlyoutSeparator/>
+                                    <MenuFlyoutSubItem x:ConnectionId='20' x:Name="AddColorButton"   Text="Add form Color">
+                                        <MenuFlyoutSubItem.Icon>
+                                            <FontIcon Glyph="&#xE2B1;" FontSize="24" FontFamily="Segoe MDL2 Assets" />
+                                        </MenuFlyoutSubItem.Icon>
+                                        <MenuFlyoutItem x:ConnectionId='21' x:Name="AddColorWhiteButton" Text="White"                                    >
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE91F;"   Foreground="White"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                        <MenuFlyoutItem x:ConnectionId='22' x:Name="AddColorBlackButton" Text="Black"                                    >
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE91F;"   Foreground="Black"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                        <MenuFlyoutItem x:ConnectionId='23' x:Name="AddColorRedButton" Text="Red"                                   >
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE91F;"   Foreground="Red"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                        <MenuFlyoutItem x:ConnectionId='24' x:Name="AddColorGreenButton" Text="Green"                                     >
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE91F;"   Foreground="Green"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                        <MenuFlyoutItem x:ConnectionId='25' x:Name="AddColorBlueButton" Text="Blue"                                   >
+                                            <MenuFlyoutItem.Icon>
+                                                <FontIcon FontFamily="Segoe MDL2 Assets" Glyph="&#xE91F;"   Foreground="Blue"/>
+                                            </MenuFlyoutItem.Icon>
+                                        </MenuFlyoutItem>
+                                    </MenuFlyoutSubItem>
+
+                                </MenuFlyout>
+                            </Button.Flyout>
+                        </Button>
+
+
+                    </Grid>
+
+
+                    <!--媒体控件-->
+                    <SplitView x:ConnectionId='4' x:Name="RightSplitView"  Grid.Row="1" PanePlacement="Right" OpenPaneLength="330" CompactPaneLength="0"   DisplayMode="Overlay" IsPaneOpen="False"  >
+
+                        <SplitView.Content>
+                            <MediaPlayerElement x:ConnectionId='13' x:Name="MediaPlayerElement" Grid.Row="1" Background="Transparent" />
+                        </SplitView.Content>
+
+                        <SplitView.Pane>
+                            <GridView x:ConnectionId='14' x:Name="MediaList" Grid.Row="1" SelectionMode="Extended"  Background="{ThemeResource SystemControlPageBackgroundChromeLowBrush}" 
+                                      AllowDrop="True" CanReorderItems="True" CanDragItems="True"   
+                                                                                      >
+
+                                <GridView.ItemTemplate>
+                                    <DataTemplate>
+                                        <Grid >
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="*" />
+                                                <RowDefinition Height="44" />
+                                            </Grid.RowDefinitions>
+                                            <Border  Background="{Binding Brush,Mode=OneWay}"  CornerRadius="3" MinWidth="90" MinHeight="60">
+                                                <Image  Source="{Binding Bitmap,Mode=OneWay}"  />
+                                            </Border>
+                                            <TextBlock Grid.Row="1" Text="{Binding Name,Mode=TwoWay}" FontSize="13" TextTrimming="Clip" TextWrapping="Wrap"  HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                        </Grid>
+                                    </DataTemplate>
+                                </GridView.ItemTemplate>
+
+                                <GridView.ItemContainerStyle>
+                                    <Style TargetType="GridViewItem">
+                                        <Setter Property="Margin" Value="3"/>
+                                        <Setter Property="Padding" Value="0"/>
+                                        <Setter Property="Width" Value="100"/>
+                                        <Setter Property="Height" Value="100"/>
+                                    </Style>
+                                </GridView.ItemContainerStyle>
+                            </GridView>
+                        </SplitView.Pane>
+
+                    </SplitView>
+
+
+
+                    <!--中栏-->
+                    <Grid Grid.Row="2" BorderThickness="0,1,0,0" BorderBrush="#060606" Background="#44bbbbbb">
+
+                        <con:PlayControl x:ConnectionId='8' x:Name="PlayControl" HorizontalAlignment="Center" VerticalAlignment="Center" isPlay="{Binding isPlay,Mode=TwoWay}"/>
+
+                        <Slider x:ConnectionId='9'  x:Name="ZoomSlider" 
+                             Minimum="0.1" Maximum="10" 
+                            Margin="4,0" Width="222" Height="40" HorizontalAlignment="Right"
+                             LargeChange="1"   StepFrequency="0.1"   IsThumbToolTipEnabled="True"
+                             Value="{Binding Scale,Mode=TwoWay}"    Style="{StaticResource Slider}"/>
+                        <Button x:ConnectionId='10'  x:Name="SplitButton" HorizontalAlignment="Right" Style="{StaticResource NavigationBackButtonNormalStyle}"                            >
+                            <Button.Resources>
+                                <Storyboard x:ConnectionId='11'  x:Name="SplitShow" >
+                                    <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="SplitIcon"  Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleX)">
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0"/>
+                                        <LinearDoubleKeyFrame Value="1.2" KeyTime="0:0:0.2"/>
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0.3"/>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="SplitIcon"  Storyboard.TargetProperty="(UIElement.RenderTransform).(ScaleTransform.ScaleY)">
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0"/>
+                                        <LinearDoubleKeyFrame Value="1.2" KeyTime="0:0:0.2"/>
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0.3"/>
+                                    </DoubleAnimationUsingKeyFrames>
+                                    <DoubleAnimationUsingKeyFrames  Storyboard.TargetName="SplitIcon"  Storyboard.TargetProperty="Opacity">
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0"/>
+                                        <LinearDoubleKeyFrame Value="0" KeyTime="0:0:0.2"/>
+                                        <LinearDoubleKeyFrame Value="1" KeyTime="0:0:0.31"/>
+                                    </DoubleAnimationUsingKeyFrames>
+                                </Storyboard>
+                            </Button.Resources>
+                            <FontIcon x:ConnectionId='12'  x:Name="SplitIcon" FontSize="18"  FontFamily="Segoe MDL2 Assets" Glyph="&#xE71D;" RenderTransformOrigin="0.5,0.5">
+                                <FontIcon.RenderTransform>
+                                    <CompositeTransform/>
+                                </FontIcon.RenderTransform>
+                            </FontIcon>
+                        </Button>
+
+
+                    </Grid>
+                    <controls:GridSplitter x:ConnectionId='5'  x:Name="GridSplitter"  Grid.Row="2" Width="100" Background="Transparent" HorizontalAlignment="Left"
+                                    GripperCursor="Default"  GripperForeground="{ThemeResource SystemControlPageTextChromeBlackMediumLowBrush}"
+                                    ResizeDirection="Rows" ResizeBehavior="BasedOnAlignment"
+                                    CursorBehavior="ChangeOnSplitterHover"/>
+
+
+                    <!--底部画布-->
+                    <con:MainCanvasControl x:ConnectionId='6' x:Name="CanvasControl" Grid.Row="3"   Refresh="{Binding Refresh,Mode=OneWay}" 
+                                        AllowDrop="True" 
+                                                                          
+                                                                            
+                                                                 />
+  
+  
+                    <!--转码栏阴影-->
+                    <con:TranscoderControl2 x:ConnectionId='7' x:Name="TranscoderControl" Grid.RowSpan="4" />
+
+
+                    <!--提示-->
+                    <Pic:TipPicker Margin="0,22,0,0" Grid.RowSpan="4" VerticalAlignment="Top" HorizontalAlignment="Center" TipVisibility="{Binding TipVisibility,Mode=OneWay}" />
+
+
+
+
+                </Grid>
+            </SplitView.Content>
+
+            <!--左侧栏-->
+        <SplitView.Pane  >
+            <Grid >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+
+                <Border  Background="{ThemeResource SystemControlForegroundChromeMediumBrush}">
+                        <Image Source="ms-appx:///Icon/Photo.png" Stretch="UniformToFill"/>
+                    </Border>
+                    <con:ThemeButton   HorizontalAlignment="Right" VerticalAlignment="Top"/>
+
+                <ListView Grid.Row="1" Background="{ThemeResource SystemControlForegroundChromeMediumBrush}">
+                        <ListView.ItemContainerStyle>
+                            <Style TargetType="ListViewItem" >
+                                <Setter Property="Height" Value="46"/>
+                                <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                <Setter Property="VerticalContentAlignment" Value="Stretch"/>
+                            </Style>
+                        </ListView.ItemContainerStyle>
+
+                        <ListViewItem x:ConnectionId='50' x:Name="HomeButton"                           >
+                            <Grid   BorderThickness="0,0,0,1" BorderBrush="{ThemeResource SystemControlPageBackgroundBaseLowBrush}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#xE10F;"/>
+                                <TextBlock Grid.Column="1" Text="Home" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem x:ConnectionId='51' x:Name="NewButton"                           >
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon  FontSize="20" FontFamily="Segoe MDL2 Assets" Glyph="&#xE729;"/>
+                                <TextBlock Grid.Column="1" Text="New" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem x:ConnectionId='52' x:Name="OpenButton"                            >
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon FontSize="20" FontFamily="Segoe UI Symbol" Glyph="&#xE197;"/>
+                                <TextBlock Grid.Column="1" Text="Open" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem x:ConnectionId='53' x:Name="SaveButton"                           >
+                            <Grid >
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon FontSize="20" FontFamily="Segoe UI Symbol" Glyph="&#xE105;"/>
+                                <TextBlock Grid.Column="1" Text="Save" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem x:ConnectionId='54' x:Name="SaveAdButton"                              >
+                            <Grid   BorderThickness="0,0,0,1" BorderBrush="{ThemeResource SystemControlPageBackgroundBaseLowBrush}">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#xE28F;"/>
+                                <TextBlock Grid.Column="1" Text="Save as" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+                        <ListViewItem x:ConnectionId='55' x:Name="ExportButton"                              >
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="60"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <FontIcon FontSize="18" FontFamily="Segoe UI Symbol" Glyph="&#xE0AF;"/>
+                                <TextBlock Grid.Column="1" Text="Export" Style="{StaticResource TextBlock}"/>
+                            </Grid>
+                        </ListViewItem>
+
+ 
+  
+                    </ListView>
+
+                <Button x:ConnectionId='49' x:Name="TranscoderButton" Grid.Row="2"  Width="Auto" Padding="14,0" BorderThickness="0" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Style="{ThemeResource EllipsisButtonRevealStyle}"                                 >
+                    <Grid  >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="60"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <FontIcon FontFamily="Segoe UI Symbol" Glyph="&#xE12A;"/>
+                        <TextBlock Grid.Column="1" Text="Transcoder" Style="{StaticResource TextBlock}"/>
+                    </Grid>
+                </Button>
+                
+            </Grid>
+            </SplitView.Pane>
+
+        </SplitView>
+</Page>
+
