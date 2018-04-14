@@ -1,1 +1,1 @@
-C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\剪片.csproj;x64
+C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\剪片.csproj;x64

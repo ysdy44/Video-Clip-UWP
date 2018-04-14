@@ -59,7 +59,6 @@ namespace 剪片.Control
         public MainCanvasControl()
         {
             this.InitializeComponent();
-
         }
 
 
@@ -1371,13 +1370,7 @@ namespace 剪片.Control
         #endregion
 
 
-
-
-
-
-
-
-
+        
 
     }
 }

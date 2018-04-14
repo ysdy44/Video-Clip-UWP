@@ -29019,11 +29019,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\剪片\\剪片.csproj",
+      "projectUniqueName": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\Video-Clip-UWP\\剪片\\剪片.csproj",
       "projectName": "剪片",
-      "projectPath": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\剪片\\剪片.csproj",
+      "projectPath": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\Video-Clip-UWP\\剪片\\剪片.csproj",
       "packagesPath": "C:\\Users\\于梦凡\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\剪片\\obj\\",
+      "outputPath": "C:\\Users\\于梦凡\\Visual studio\\有趣的测试\\剪片\\Video-Clip-UWP\\剪片\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [

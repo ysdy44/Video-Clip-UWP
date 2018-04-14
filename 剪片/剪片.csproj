@@ -179,6 +179,12 @@
     <Content Include="Icon\Logo.png" />
     <Content Include="Icon\LogoB.png" />
     <Content Include="Icon\Photo.png" />
+    <Content Include="Icon\Screenshots\00.PNG" />
+    <Content Include="Icon\Screenshots\01.PNG" />
+    <Content Include="Icon\Screenshots\02.PNG" />
+    <Content Include="Icon\Screenshots\03.PNG" />
+    <Content Include="Icon\Screenshots\04.PNG" />
+    <Content Include="Icon\Screenshots\05.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />

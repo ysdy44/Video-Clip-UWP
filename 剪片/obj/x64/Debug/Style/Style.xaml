@@ -7,7 +7,7 @@
 
 
     <SolidColorBrush x:Key="LineColor" Color="#22000000"/>
-    <SolidColorBrush x:Key="ThemeColor" Color="#5ce0d2"/>
+    <SolidColorBrush x:Key="ThemeColor" Color="#7500e2"/>
 
     
     <!--TextBlock-->

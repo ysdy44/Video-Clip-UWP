@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>90f0c236-6302-4311-ac5b-8eae70dd57b5</PackageIdentityName>
     <PackageIdentityPublisher>CN=于梦凡</PackageIdentityPublisher>
-    <IntermediateOutputPath>C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\obj\x64\Debug\</IntermediateOutputPath>
+    <IntermediateOutputPath>C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\obj\x64\Debug\</IntermediateOutputPath>
     <RemoteDeploymentType>
     </RemoteDeploymentType>
     <PackageRegistrationPath>
@@ -18,7 +18,7 @@
     <RemoveNonLayoutFiles>true</RemoveNonLayoutFiles>
     <DeployOptionalPackages>false</DeployOptionalPackages>
     <WindowsSdkPath>C:\Program Files %28x86%29\Windows Kits\10\</WindowsSdkPath>
-    <LayoutDir>C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\AppX</LayoutDir>
+    <LayoutDir>C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\AppX</LayoutDir>
     <RegisteredManifestChecksum>3AB37CC29F8DC68B2D29D8EBC0971134B2D3EDD69EFCC8FF5659FAFEB62A8BDF</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>90f0c236-6302-4311-ac5b-8eae70dd57b5_1.0.0.0_x64__jymvjzkarhx6r</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>90f0c236-6302-4311-ac5b-8eae70dd57b5_jymvjzkarhx6r!App</RegisteredUserModeAppID>
@@ -28,16 +28,16 @@
     <JitOptimizationSuppressed>True</JitOptimizationSuppressed>
   </PropertyGroup>
   <ItemGroup>
-    <AppXManifest Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\Core\AppxManifest.xml">
+    <AppXManifest Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T14:20:21.063</Modified>
+      <Modified>2018-04-14T07:59:36.900</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\剪片.exe">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\剪片.exe">
       <PackagePath>entrypoint\剪片.exe</PackagePath>
-      <Modified>2018-04-09T14:20:17.778</Modified>
+      <Modified>2018-04-14T07:59:31.066</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\于梦凡\.nuget\packages\colorcode.core\2.0.3\lib\netstandard1.4\ColorCode.Core.dll">
       <PackagePath>ColorCode.Core.dll</PackagePath>
@@ -587,254 +587,278 @@
       <PackagePath>Microsoft.Graphics.Canvas.winmd</PackagePath>
       <Modified>2017-06-25T19:01:44.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LargeTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.466</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LargeTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.521</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LargeTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.590</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LargeTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.711</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LargeTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:19.072</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SmallTile.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.728</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SmallTile.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.754</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SmallTile.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.780</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SmallTile.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.808</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SmallTile.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.851</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SplashScreen.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:19.507</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SplashScreen.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:19.582</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SplashScreen.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:19.675</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SplashScreen.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.337</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square150x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.883</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square150x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.916</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square150x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.952</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square150x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.113</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.365</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.454</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.393</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.408</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.145</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.163</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.181</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-16.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.260</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-24.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.276</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-256.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.350</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-32.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.291</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-48.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.308</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\StoreLogo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.352</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\StoreLogo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.368</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\StoreLogo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.399</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\StoreLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.421</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\StoreLogo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:20.453</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Wide310x150Logo.scale-100.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.154</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Wide310x150Logo.scale-125.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.189</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Wide310x150Logo.scale-150.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.230</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Wide310x150Logo.scale-400.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.422</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Icon\Logo.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Logo.png">
       <PackagePath>Icon\Logo.png</PackagePath>
       <Modified>2018-04-05T11:08:08.381</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Icon\LogoB.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\LogoB.png">
       <PackagePath>Icon\LogoB.png</PackagePath>
       <Modified>2018-04-05T11:11:12.221</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Icon\Photo.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Photo.png">
       <PackagePath>Icon\Photo.png</PackagePath>
       <Modified>2018-03-28T08:27:42.150</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\LockScreenLogo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\00.PNG">
+      <PackagePath>Icon\Screenshots\00.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.716</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\01.PNG">
+      <PackagePath>Icon\Screenshots\01.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\02.PNG">
+      <PackagePath>Icon\Screenshots\02.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\03.PNG">
+      <PackagePath>Icon\Screenshots\03.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.732</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\04.PNG">
+      <PackagePath>Icon\Screenshots\04.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.747</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Icon\Screenshots\05.PNG">
+      <PackagePath>Icon\Screenshots\05.PNG</PackagePath>
+      <Modified>2018-04-14T07:47:06.763</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
       <Modified>2018-02-27T08:53:45.449</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\SplashScreen.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:19.831</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square150x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:17.997</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.200</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:11:21.378</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Assets\Wide310x150Logo.scale-200.png">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
       <Modified>2018-04-05T11:08:18.283</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\Properties\Default.rd.xml">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2018-03-10T01:23:59.303</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\剪片.xr.xml">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\剪片.xr.xml">
       <PackagePath>剪片.xr.xml</PackagePath>
-      <Modified>2018-04-06T04:26:15.056</Modified>
+      <Modified>2018-04-13T13:11:43.996</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.16299.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1012,14 +1036,14 @@
       <PackagePath>Microsoft.Toolkit.Uwp.UI.Controls\TileControl\TileControl.xaml</PackagePath>
       <Modified>2018-02-27T11:51:10.000</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\resources.pri">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2018-04-09T14:20:19.824</Modified>
+      <Modified>2018-04-14T07:59:32.795</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\剪片\bin\x64\Debug\Core\剪片.exe">
+    <AppxPackagedFile Include="C:\Users\于梦凡\Visual studio\有趣的测试\剪片\Video-Clip-UWP\剪片\bin\x64\Debug\Core\剪片.exe">
       <PackagePath>剪片.exe</PackagePath>
-      <Modified>2018-04-09T14:20:21.063</Modified>
+      <Modified>2018-04-14T07:59:36.884</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

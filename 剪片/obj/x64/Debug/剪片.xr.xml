@@ -193,8 +193,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
-      <RootProperty Name="TextTrimming" />
       <RootProperty Name="TextWrapping" />
+      <RootProperty Name="TextTrimming" />
       <RootProperty Name="Style" />
       <RootProperty Name="Margin" />
       <RootProperty Name="FontWeight" />
@@ -284,6 +284,7 @@
       <RootProperty Name="ItemTemplate" />
       <RootProperty Name="ItemContainerStyle" />
       <RootEvent Name="DragItemsStarting" />
+      <RootEvent Name="SelectionChanged" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
