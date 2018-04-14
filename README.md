@@ -1,5 +1,7 @@
 # Video-Clip-UWP
 Clip and splicing MP4 video, from the material library to add video clips, coating, background music
+
+
 1.Add a video clips
 ![](https://github.com/ysdy44/Video-Clip-UWP/blob/master/剪片/Icon/Screenshots/00.PNG)  
 
