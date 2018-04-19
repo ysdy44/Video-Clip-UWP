@@ -117,7 +117,6 @@
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Model\Clip.cs" />
     <Compile Include="Model\Media.cs" />
     <Compile Include="Model\Model.cs" />
     <Compile Include="Model\Setting.cs" />

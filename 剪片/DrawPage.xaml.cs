@@ -56,11 +56,9 @@ namespace 剪片
         {
             this.InitializeComponent();
             this.DataContext = App.Model;
-
-          // Windows.Media.Effects.VideoTransformEffectDefinition
         }
 
-
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
         #region Global：全局
 
 
@@ -143,11 +141,20 @@ namespace 剪片
                     TimeSpan postion = App.Model.ScreenToCanvas((float)p.X);  //当前时间
                     TimeSpan postiondouble = postion + postion;//双倍当前时间（为了与以后的start+end做比较计算）
 
-                    if (App.Model.MediaComposition.Clips.Count==0)
+                    if (App.Model.MediaComposition.Clips.Count==0)//轨道是空的
                     {
                         App.Model.MediaComposition.Clips.Add( clip);
                     }
-                    else
+                    else if (App.Model.MediaComposition.Clips.Count == 1)//轨道上只有一个
+                    {
+                        var First = App.Model.MediaComposition.Clips.First();
+
+                        if (postiondouble < First.StartTimeInComposition + First.EndTimeInComposition)
+                            App.Model.MediaComposition.Clips.Insert(0, clip);
+                        else
+                            App.Model.MediaComposition.Clips.Insert(1, clip);
+                    }
+                    else//轨道上有多个
                     {
                         //判断是否超出第一个剪辑的结束时间 
                         MediaClip First = App.Model.MediaComposition.Clips.FirstOrDefault();

@@ -21,8 +21,13 @@ namespace 剪片
 { 
     sealed partial class App : Application
     {
-        //明暗主题：实例化
+
         public static Model.Model Model = new Model.Model();
+
+
+
+
+
         public static Model.Setting Setting = new Model.Setting();
 
         public async static void Tip(string s)//全局提示

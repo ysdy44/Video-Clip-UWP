@@ -11,11 +11,10 @@ namespace 剪片.Model
 {
     public  class Model : INotifyPropertyChanged
     {
+
         //Time：时间线
         public Action<float> function;
         public Stopwatch watch;//秒表
-
-
 
 
         #region Global：全局
@@ -85,6 +84,7 @@ namespace 剪片.Model
         public Media Drop = null;
 
 
+
         //当前媒体
         private MediaClip current = null;
         public MediaClip Current
@@ -99,6 +99,7 @@ namespace 剪片.Model
                 else this.isCurrentNull = true;
             }
         }
+
 
 
         //图层索引 
@@ -120,6 +121,7 @@ namespace 剪片.Model
         }
 
 
+
         //当前媒体
         private BackgroundAudioTrack audioCurrent = null;
         public BackgroundAudioTrack AudioCurrent
@@ -136,25 +138,19 @@ namespace 剪片.Model
             }
         }
 
-
-
-
-
-
+        
 
         //媒体播放器
         public MediaPlayer MediaPlayer = new MediaPlayer();
 
+
+
         //媒体组合
         public MediaComposition MediaComposition = new MediaComposition();
 
-        public List<Clip> Clips = new List<Clip> { };
 
 
         #endregion
-
-
-
 
 
         #region  Concrol：控件宽高
@@ -243,6 +239,7 @@ namespace 剪片.Model
 
         #region Binding：绑定
 
+
         //图层索引是否为空
         private bool iscurrentNull;
         public bool isCurrentNull
@@ -310,8 +307,6 @@ namespace 剪片.Model
 
         #endregion
         
-
-
 
 
         public Model() { }
